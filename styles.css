@@ -63,6 +63,16 @@ body {
 
 }
 
+.footer {
+    background-color: #1f2937;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    height: fit-content;
+}
+
 .content {
     display: flex;
     flex-direction: column;
