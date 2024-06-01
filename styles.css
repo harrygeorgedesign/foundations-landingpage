@@ -22,13 +22,22 @@ body {
     margin-left: 48px;
 }
 
-
 .hero {
     background-color: #1f2937;
-    padding: 48px;
+    padding: 48px 20px;
     display: flex;
-    gap: 20px;
-    justify-content:space-between;
+    gap: 56px;
+    justify-content: center;
+    height: fit-content;
+}
+
+.quad {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 48px;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
     height: fit-content;
 }
 
@@ -37,6 +46,21 @@ body {
     flex-direction: column;
     min-width: 300px;
     width: 400px;
+    gap: 8px;
+}
+
+.center-content {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.quad .content {
+    display: flex;
+    max-width: 200px;
+    align-items: center;
 }
 
 .buttons {
@@ -52,10 +76,23 @@ h1 {
     font-size: 48px;
 }
 
-p {
+h2 {
+    margin: 0;
+    color: #1f2937;
+    font-weight: 800;
+    font-size: 38px;
+}
+
+.hero p {
     margin: 0;
     font-size: 18px;
     color: #e5e7eb;
+}
+
+.quad p {
+    margin: 0;
+    font-size: 16px;
+    color: #1f2937;
 }
 
 ul {
@@ -80,7 +117,16 @@ button {
 .image img {
     height: 400px;
     width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.quad img {
+    height: auto;
+    width: 100%;
     max-height: 300px;
     object-fit: cover;
     object-position: center;
+    align-items: center;
 }
