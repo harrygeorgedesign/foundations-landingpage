@@ -24,6 +24,7 @@ body {
 
 .hero {
     background-color: #1f2937;
+    color: #f9faf8;
     padding: 48px 20px;
     display: flex;
     gap: 56px;
@@ -32,6 +33,7 @@ body {
 }
 
 .quad {
+    color: #1f2937;
     display: flex;
     flex-direction: column;
     padding: 128px 48px;
@@ -43,6 +45,7 @@ body {
 
 .quote {
     background-color: #e5e7eb;
+    color: #1f2937;
     padding: 128px 48px;
     display: flex;
     justify-content: center;
@@ -50,11 +53,21 @@ body {
     height: fit-content;
 }
 
+.cta {
+    background-color: #fff;
+    padding: 128px 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+
+}
+
 .content {
     display: flex;
     flex-direction: column;
     min-width: 300px;
-    width: 400px;
+    width: 40%;
     gap: 8px;
 }
 
@@ -74,49 +87,74 @@ body {
     justify-content: center;
 }
 
+.cta-wrapper {
+    color: #fff;
+    background-color:#3882f6;
+    display: flex;
+    padding: 56px;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    flex-wrap: wrap;
+    gap: 10%;
+}
+
 .quad .content {
     display: flex;
     max-width: 200px;
     align-items: center;
 }
 
+.cta .content {
+    display: flex;
+    width: 40%;
+    min-width: 70%;
+}
+
+
 .buttons {
     margin-top: 12px;
     display: flex;
     gap: 12px;
+    height: fit-content;
 }
 
 h1 {
     margin: 0;
-    color: #f9faf8;
     font-weight: 900;
     font-size: 48px;
 }
 
 h2 {
     margin: 0;
-    color: #1f2937;
     font-weight: 900;
     font-size: 36px;
 }
 
-.hero p {
+h3 {
     margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    
+}
+
+p {
+    margin: 0;
+    font-weight: 300;
+}
+
+.hero p {
     font-size: 18px;
-    color: #e5e7eb;
 }
 
 .quad p {
-    margin: 0;
     font-size: 16px;
-    color: #1f2937;
 }
 
 .quote p {
-    margin: 0;
     font-size: 36px;
     font-style: italic;
-    font-weight: 300;
 }
 
 #author {
@@ -126,10 +164,6 @@ h2 {
     font-weight: 700;
     font-style: normal;
     justify-content: flex-end;
-}
-
-.cta {
-    margin: 0;
 }
 
 .modal {
@@ -146,7 +180,7 @@ ul {
     gap: 24px;
 }
 
-button {
+.hero button {
     background-color: #3882f6;
     color: #fff;
     font-size: 14px;
@@ -154,6 +188,17 @@ button {
     padding: 8px 28px;
     border-radius: 8px;
 }
+
+.cta button {
+    background-color: #3882f6;
+    border-color: #fff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 28px;
+    border-radius: 8px;
+}
+
 
 .image img {
     height: 400px;
